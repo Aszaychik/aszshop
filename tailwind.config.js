@@ -7,6 +7,7 @@ module.exports = {
         navColor: "#14213d",
         primary: "#edf2f4",
         secondary: "#d90429",
+        secondary2: "#ef233c",
       },
     },
   },
