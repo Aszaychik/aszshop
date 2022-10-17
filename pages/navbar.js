@@ -2,7 +2,7 @@ import { AiOutlineShoppingCart, AiOutlineMessage, AiOutlineSearch } from "react-
 import { IoMdArrowDropdown } from "react-icons/io";
 
 export default function navbar() {
-  const catText = ["Cat1", "Cat2", "Cat3", "Cat4"];
+  const catText = ["Gadget", "PC", "Hardware", "Software"];
   const showCat = () => {
     const catItem = document.getElementById("catItem");
     if (catItem.style.display == "none") {
@@ -24,10 +24,10 @@ export default function navbar() {
               <button id="dropdown" className="z-10 w-10 p-2 mx-auto text-xs bg-gray-500 rounded-l hover:bg-gray-400 hover:text-gray-900 hidden sm:inline" onClick={showCat}>
                 <IoMdArrowDropdown />
               </button>
-              <div id="catItem" className="hidden z-10 absolute text-xs rounded top-14 ml-0 w-auto p-2 m-2 min-w-max bg-gray-500">
+              <div id="catItem" className="hidden z-10 absolute text-xs rounded top-14 ml-0 w-auto p-2 m-2 min-w-max bg-gray-500 ">
                 <ul>
                   {catText.map((cat) => (
-                    <li>
+                    <li className="hover:bg-gray-400 hover:text-gray-900 p-1 rounded">
                       <button key={cat}>{cat}</button>
                     </li>
                   ))}
