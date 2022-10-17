@@ -10,7 +10,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {navbar()}
-      <main className="bg-primary min-h-full"></main>
+      <main className="bg-primary min-h-full">
+        <div className="w-full"></div>
+      </main>
     </div>
   );
 }
