@@ -5,14 +5,11 @@ export default function navbar() {
   const catText = ["Gadget", "PC", "Hardware", "Software"];
   const showCat = () => {
     const catItem = document.getElementById("catItem");
-    if (catItem.style.display == "none") {
-      catItem.style.display = "block";
-      return;
-    }
     if (catItem.style.display == "block") {
       catItem.style.display = "none";
       return;
     }
+    catItem.style.display = "block";
   };
   return (
     <header>
