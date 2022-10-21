@@ -12,8 +12,8 @@ export default function navbar() {
     catItem.style.display = "block";
   };
   return (
-    <header>
-      <nav className="top-0 w-full bg-navColor p-3 text-white flex justify-between items-center gap-3 shadow-md shadow-gray-500">
+    <header className="">
+      <nav className="top-0 sticky w-full z-50 bg-primary p-3 text-white flex justify-between items-center gap-3">
         <h1 className="text-3xl cursor-pointer sm:block hidden">AsZShop</h1>
         <div className="w-full p-3">
           <div className="flex">

@@ -5,8 +5,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        navColor: "#14213d",
-        primary: "#edf2f4",
+        primary: "#171717",
         secondary: "#d90429",
         secondary2: "#ef233c",
       },
