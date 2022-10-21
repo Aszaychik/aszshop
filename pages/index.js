@@ -1,5 +1,6 @@
 import Head from "next/head";
 import navbar from "./navbar";
+import jumbotron from "./jumbotron";
 
 export default function Home() {
   return (
@@ -10,8 +11,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {navbar()}
-      <main className="bg-primary min-h-full">
-        <div className="w-full"></div>
+      <main className="bg-primary">
+        <div className="min-h-full">
+          {jumbotron()}
+        </div>
       </main>
     </div>
   );

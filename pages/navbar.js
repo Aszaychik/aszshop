@@ -2,7 +2,7 @@ import { AiOutlineShoppingCart, AiOutlineMessage, AiOutlineSearch } from "react-
 import { IoMdArrowDropdown } from "react-icons/io";
 
 export default function navbar() {
-  const catText = ["Gadget", "PC", "Hardware", "Software"];
+  const catText = ["CPU", "Keyboard & Mouse", "Motherboard", "Power Supply", "DLL"];
   const showCat = () => {
     const catItem = document.getElementById("catItem");
     if (catItem.style.display == "block") {
@@ -13,7 +13,7 @@ export default function navbar() {
   };
   return (
     <header>
-      <nav className="top-0 fixed w-full bg-navColor p-3 text-white flex justify-between items-center gap-3 shadow-md shadow-gray-500">
+      <nav className="top-0 w-full bg-navColor p-3 text-white flex justify-between items-center gap-3 shadow-md shadow-gray-500">
         <h1 className="text-3xl cursor-pointer sm:block hidden">AsZShop</h1>
         <div className="w-full p-3">
           <div className="flex">
