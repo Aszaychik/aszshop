@@ -1,5 +1,6 @@
 import { AiOutlineShoppingCart, AiOutlineMessage, AiOutlineSearch } from "react-icons/ai";
 import { IoMdArrowDropdown } from "react-icons/io";
+import Link from 'next/link';
 
 export default function navbar() {
   const catText = ["CPU", "Keyboard & Mouse", "Motherboard", "Power Supply", "DLL"];
@@ -41,10 +42,14 @@ export default function navbar() {
         </div>
         <ul className="flex justify-center items-center sm:gap-5 gap-2 cursor-pointer">
           <li className="sm:text-2xl text-xl p-2 rounded hover:bg-gray-500">
-            <AiOutlineShoppingCart />
+            <a href="">
+              <AiOutlineShoppingCart />
+            </a>
           </li>
           <li className="sm:text-2xl text-xl p-2 rounded hover:bg-gray-500">
-            <AiOutlineMessage />
+            <Link href="contact">
+              <AiOutlineMessage />
+            </Link>
           </li>
           <li>
             <button type="submit" className="bg-secondary p-2 rounded-2xl hover:bg-secondary2 hover:rounded transition-all">
