@@ -1,5 +1,5 @@
 import navbar from "./navbar"
-import {AiFillFacebook, AiFillTwitterSquare, AiFillGithub, AiFillLinkedin} from "react-icons/ai"
+import {AiOutlineArrowLeft ,AiFillFacebook, AiFillTwitterSquare, AiFillGithub, AiFillLinkedin} from "react-icons/ai"
 import Link from 'next/link';
 import { useState } from "react";
 
@@ -12,10 +12,17 @@ const contact = () => {
   ])
   return (
     <main className="bg-white min-h-screen">
-      {navbar()}
-      <div className="flex flex-col justify-center items-center mt-10 gap-10">
+      <nav className='sm:bg-primary sm:text-white'>
+          <ul className='flex items-center justify-between w-full p-3 text-xl sm:text-3xl'>
+            <li className='cursor-pointer flex items-center gap-5'>
+              <Link href="./"><AiOutlineArrowLeft/></Link>
+              <span>Back</span>
+            </li>
+          </ul>
+        </nav>
+      <div className="flex flex-col justify-center items-center mt-5 sm:mt-10 gap-5 sm:gap-10">
         <h1 className="text-4xl">Contact Us</h1>
-        <form action="" className="flex w-1/2 flex-col mt-10 gap-10">
+        <form action="" className="flex w-3/4 sm:w-1/2 flex-col mt-5 sm:mt-10 gap-5 sm:gap-10">
           <fieldset>
             <input className="border border-black rounded-lg p-2 w-full" type="text" name="inputUser" placeholder="Username..."/>
           </fieldset>
@@ -25,7 +32,7 @@ const contact = () => {
           <fieldset>
             <textarea className="border border-black rounded-lg p-2 w-full" name="inputMssg" id="" cols="30" rows="10" placeholder="Message..."></textarea>
           </fieldset>
-          <button className="border border-black mx-auto w-1/2 p-2 rounded" type="submit">SEND</button>
+          <button className="bg-primary text-white mx-auto w-1/2 p-2 rounded" type="submit">SEND</button>
         </form>
         <ul className="flex text-4xl gap-3">
           {contactSocial.map((item) => (
