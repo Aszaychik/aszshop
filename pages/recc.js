@@ -26,7 +26,7 @@ const recc = () => {
                     />
                     <div className="flex flex-col justify-around items-center text-white text-2xl font-bold">
                       <div className="gap-24 flex flex-col hover:">
-                        <caption className="">Test Image</caption>
+                        <figcaption className="">Test Image</figcaption>
                         <div className="rounded flex justify-center" >
                           <span className="bg-secondary ursor-pointer p-3 border-r rounded-l" >{recItem.price}</span>
                           <button className="bg-secondary cursor-pointer p-3 hover:brightness-150 hover:bg-secondary2 rounded-r "><AiOutlineShoppingCart/></button>
