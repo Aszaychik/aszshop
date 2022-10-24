@@ -25,8 +25,8 @@ export default function navbar() {
               <div id="catItem" className="hidden z-10 absolute text-xs rounded top-14 ml-0 w-auto p-2 m-2 min-w-max bg-gray-500 ">
                 <ul>
                   {catText.map((cat) => (
-                    <li className="hover:bg-gray-400 hover:text-gray-900 p-1 rounded">
-                      <button key={cat}>{cat}</button>
+                    <li className="hover:bg-gray-400 hover:text-gray-900 p-1 rounded" key={cat}>
+                      <button>{cat}</button>
                     </li>
                   ))}
                 </ul>

@@ -16,7 +16,7 @@ export default function Home() {
       <main className="bg-white min-h-screen">
         {navbar()}
         {jumbotron()}
-        {/* {recc()} */}
+        {recc()}
       </main>
     </div>
   );
