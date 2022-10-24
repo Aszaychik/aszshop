@@ -51,10 +51,10 @@ export default function navbar() {
               <AiOutlineMessage />
             </Link>
           </li>
-          <li>
-            <button type="submit" className="bg-secondary p-2 rounded-2xl hover:bg-secondary2 hover:rounded transition-all">
+          <li className="bg-secondary p-2 rounded-xl hover:bg-secondary2 hover:rounded transition-all">
+            <Link href="login">
               Login
-            </button>
+            </Link>
           </li>
         </ul>
       </nav>

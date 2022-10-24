@@ -1,14 +1,15 @@
 import navbar from "./navbar"
 import {AiFillFacebook, AiFillTwitterSquare, AiFillGithub, AiFillLinkedin} from "react-icons/ai"
 import Link from 'next/link';
+import { useState } from "react";
 
 const contact = () => {
-  const contactSocial = [
+  const [contactSocial, setContactSocial] = useState([
     {icon : <AiFillFacebook/>, link : 'https://www.facebook.com/AsZaychik/'},
     {icon : <AiFillTwitterSquare/>, link : 'https://twitter.com/ZaychikAs'},
     {icon : <AiFillGithub/>, link : 'https://github.com/Aszaychik'},
     {icon : <AiFillLinkedin/>, link : 'https://www.linkedin.com/in/aszaychik/'},
-  ]
+  ])
   return (
     <main className="bg-white min-h-screen">
       {navbar()}
