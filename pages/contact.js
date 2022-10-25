@@ -36,8 +36,8 @@ const contact = () => {
         </form>
         <ul className="flex text-4xl gap-3">
           {contactSocial.map((item) => (
-            <li className="cursor-pointer">
-            <Link href={item.link} key={item.icon}>{item.icon}</Link>
+            <li className="cursor-pointer" key={item.icon}>
+            <Link href={item.link}>{item.icon}</Link>
           </li>
           ))}
         </ul>
