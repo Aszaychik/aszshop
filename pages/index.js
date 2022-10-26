@@ -2,10 +2,10 @@ import Head from "next/head";
 import navbar from "./navbar";
 import jumbotron from "./jumbotron";
 import recc from './recc'
-
+// import testDb from '../prisma/index'
 
 export default function Home() {
-  
+  // testDb
   return (
     <div className="font-mono">
       <Head>

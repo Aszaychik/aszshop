@@ -20,8 +20,8 @@ const recc = () => {
                   <figure className="relative w-full h-full justify-center">
                     <Image  className="rounded-lg hover:opacity-20 capImg"
                     src={recItem.item}
-                    layout='fill'
-                    objectFit='cover'
+                    fill
+                    objectfit='cover'
                     priority
                     />
                     <div className="flex flex-col justify-around items-center text-white text-2xl font-bold">
