@@ -11,7 +11,7 @@ const login = () => {
   const userPass = useRef(null)
   const isInput = e => {
     e.preventDefault();
-    if(userInput.current.value.length >= 4 && userPass.current.value.length >= 8){
+    if(userInput.current.value.length >= 3 && userPass.current.value.length >= 8){
       const btnLogin = document.getElementById('btnLogin')
       btnLogin.style.background = '#d90429'
     }else{
@@ -57,9 +57,9 @@ const login = () => {
               <input id='inputPass' type="password" className='black p-2 outline-none' placeholder='Password...' required ref={userPass} onChange={isInput}/>
             </fieldset>
             <button id='btnLogin' type="submit" className='border bg-gray-400 text-white text-2xl p-2 rounded w-1/2 sm:w-1/5 lg:w-1/12 transition-colors'>Login</button>
-              <ul className='flex flex-col justify-evenly items-center flex-wrap gap-3 w-fit' key={loginBy.id}>
+              <ul className='flex flex-col justify-evenly items-center flex-wrap gap-3 w-fit' key={loginBy.icon}>
                 {loginBy.map((item)=>(
-                  <div className='flex items-center gap-5 border p-3 w-full sm:bg-primary rounded cursor-pointer sm:text-white'>
+                  <div className='flex items-center gap-5 border p-3 w-full sm:bg-primary rounded cursor-pointer sm:text-white' key={item.icon}>
                     <li className='text-2xl'>
                       {item.icon}
                     </li>
