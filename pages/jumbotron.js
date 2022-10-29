@@ -8,7 +8,7 @@ export default function jumbotron() {
         src='https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
         alt="Banner"
         fill
-        objectFit='cover'
+        objectfit='cover'
         priority
         />
         <div className='relative flex flex-col justify-center items-center gap-10 uppercase'>

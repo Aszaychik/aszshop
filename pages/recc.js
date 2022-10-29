@@ -21,7 +21,7 @@ const recc = () => {
                     <Image  className="rounded-lg hover:opacity-20 capImg"
                     src={recItem.item}
                     fill
-                    objectFit='cover'
+                    objectfit='cover'
                     priority
                     />
                     <div className="flex flex-col justify-around items-center text-white text-2xl font-bold">

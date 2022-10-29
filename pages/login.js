@@ -44,7 +44,7 @@ const login = () => {
             <Image className='rounded-full'
             src={testImg}
             fill
-            objectFit='cover'
+            objectfit='cover'
             />
           </div>
           <form id='formLogin' className='flex flex-col justify-center items-center gap-10'>
