@@ -43,7 +43,7 @@ const login = () => {
           <div className='relative mx-auto mt-4 sm:mt-24 mb-6 sm:mb-12 w-36 sm:w-48 h-36 sm:h-48'>
             <Image className='rounded-full'
             src={testImg}
-            layout='fill'
+            fill
             objectFit='cover'
             />
           </div>
